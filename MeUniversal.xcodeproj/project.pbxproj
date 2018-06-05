@@ -15,6 +15,9 @@
 		E3B2F8DA20C63B3A00F565C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B2F8D220C63B3A00F565C0 /* main.m */; };
 		E3B2F8DB20C63B3A00F565C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B2F8D420C63B3A00F565C0 /* ViewController.m */; };
 		E3B2F8E720C6699E00F565C0 /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B2F8E620C6699E00F565C0 /* AESCipher.m */; };
+		E3C3E4D420C679D200DFC7DD /* UIButton+EnlargeHitArea.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4D320C679D200DFC7DD /* UIButton+EnlargeHitArea.m */; };
+		E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4D920C67A4B00DFC7DD /* AppDelegate+AppService.m */; };
+		E3C3E4DD20C67A6E00DFC7DD /* UIView+dottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4DB20C67A6D00DFC7DD /* UIView+dottedLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,13 @@
 		E3B2F8E120C65FF600F565C0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E3B2F8E520C6699E00F565C0 /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
 		E3B2F8E620C6699E00F565C0 /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
+		E3C3E4D220C679D200DFC7DD /* UIButton+EnlargeHitArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeHitArea.h"; sourceTree = "<group>"; };
+		E3C3E4D320C679D200DFC7DD /* UIButton+EnlargeHitArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeHitArea.m"; sourceTree = "<group>"; };
+		E3C3E4D820C67A4B00DFC7DD /* AppDelegate+AppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
+		E3C3E4D920C67A4B00DFC7DD /* AppDelegate+AppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
+		E3C3E4DB20C67A6D00DFC7DD /* UIView+dottedLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+dottedLine.m"; sourceTree = "<group>"; };
+		E3C3E4DC20C67A6D00DFC7DD /* UIView+dottedLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+dottedLine.h"; sourceTree = "<group>"; };
+		E3C3E4DE20C67C7700DFC7DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 		5836435EACFBE51F5CA067DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3C3E4DE20C67C7700DFC7DD /* Foundation.framework */,
 				C8419CF1ECD5604EAB647899 /* libPods-MeUniversal.a */,
 			);
 			name = Frameworks;
@@ -120,6 +131,7 @@
 		E3B2F8B320C636DD00F565C0 /* Library(第三方) */ = {
 			isa = PBXGroup;
 			children = (
+				E3C3E4D120C679B200DFC7DD /* Category */,
 				E3B2F8E420C6696200F565C0 /* encrypt */,
 			);
 			path = "Library(第三方)";
@@ -156,6 +168,19 @@
 				E3B2F8E620C6699E00F565C0 /* AESCipher.m */,
 			);
 			path = encrypt;
+			sourceTree = "<group>";
+		};
+		E3C3E4D120C679B200DFC7DD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E3C3E4DC20C67A6D00DFC7DD /* UIView+dottedLine.h */,
+				E3C3E4DB20C67A6D00DFC7DD /* UIView+dottedLine.m */,
+				E3C3E4D820C67A4B00DFC7DD /* AppDelegate+AppService.h */,
+				E3C3E4D920C67A4B00DFC7DD /* AppDelegate+AppService.m */,
+				E3C3E4D220C679D200DFC7DD /* UIButton+EnlargeHitArea.h */,
+				E3C3E4D320C679D200DFC7DD /* UIButton+EnlargeHitArea.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3B2F8DB20C63B3A00F565C0 /* ViewController.m in Sources */,
+				E3C3E4D420C679D200DFC7DD /* UIButton+EnlargeHitArea.m in Sources */,
 				E3B2F8DA20C63B3A00F565C0 /* main.m in Sources */,
 				E3B2F8E720C6699E00F565C0 /* AESCipher.m in Sources */,
 				E3B2F8D520C63B3A00F565C0 /* AppDelegate.m in Sources */,
+				E3C3E4DD20C67A6E00DFC7DD /* UIView+dottedLine.m in Sources */,
+				E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

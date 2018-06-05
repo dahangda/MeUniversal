@@ -23,7 +23,7 @@
 #import <YYKit.h>
 
 //MARK:添加分类，自定义工具类
-
+#import "AESCipher.h"
 
 
 #endif /* PrefixHeader_pch */
