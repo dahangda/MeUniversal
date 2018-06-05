@@ -18,6 +18,9 @@
 		E3C3E4D420C679D200DFC7DD /* UIButton+EnlargeHitArea.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4D320C679D200DFC7DD /* UIButton+EnlargeHitArea.m */; };
 		E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4D920C67A4B00DFC7DD /* AppDelegate+AppService.m */; };
 		E3C3E4DD20C67A6E00DFC7DD /* UIView+dottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4DB20C67A6D00DFC7DD /* UIView+dottedLine.m */; };
+		E3C3E4F820C6814400DFC7DD /* UIView+ParentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4F620C6814300DFC7DD /* UIView+ParentController.m */; };
+		E3C3E4FB20C6815300DFC7DD /* UIColor+YMHex.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4F920C6815300DFC7DD /* UIColor+YMHex.m */; };
+		E3C3E4FE20C6816500DFC7DD /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3E4FC20C6816400DFC7DD /* OpenUDID.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,12 @@
 		E3C3E4DB20C67A6D00DFC7DD /* UIView+dottedLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+dottedLine.m"; sourceTree = "<group>"; };
 		E3C3E4DC20C67A6D00DFC7DD /* UIView+dottedLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+dottedLine.h"; sourceTree = "<group>"; };
 		E3C3E4DE20C67C7700DFC7DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E3C3E4F620C6814300DFC7DD /* UIView+ParentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ParentController.m"; sourceTree = "<group>"; };
+		E3C3E4F720C6814300DFC7DD /* UIView+ParentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ParentController.h"; sourceTree = "<group>"; };
+		E3C3E4F920C6815300DFC7DD /* UIColor+YMHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YMHex.m"; sourceTree = "<group>"; };
+		E3C3E4FA20C6815300DFC7DD /* UIColor+YMHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YMHex.h"; sourceTree = "<group>"; };
+		E3C3E4FC20C6816400DFC7DD /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		E3C3E4FD20C6816500DFC7DD /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +182,12 @@
 		E3C3E4D120C679B200DFC7DD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E3C3E4FD20C6816500DFC7DD /* OpenUDID.h */,
+				E3C3E4FC20C6816400DFC7DD /* OpenUDID.m */,
+				E3C3E4FA20C6815300DFC7DD /* UIColor+YMHex.h */,
+				E3C3E4F920C6815300DFC7DD /* UIColor+YMHex.m */,
+				E3C3E4F720C6814300DFC7DD /* UIView+ParentController.h */,
+				E3C3E4F620C6814300DFC7DD /* UIView+ParentController.m */,
 				E3C3E4DC20C67A6D00DFC7DD /* UIView+dottedLine.h */,
 				E3C3E4DB20C67A6D00DFC7DD /* UIView+dottedLine.m */,
 				E3C3E4D820C67A4B00DFC7DD /* AppDelegate+AppService.h */,
@@ -312,11 +327,14 @@
 			files = (
 				E3B2F8DB20C63B3A00F565C0 /* ViewController.m in Sources */,
 				E3C3E4D420C679D200DFC7DD /* UIButton+EnlargeHitArea.m in Sources */,
+				E3C3E4FB20C6815300DFC7DD /* UIColor+YMHex.m in Sources */,
 				E3B2F8DA20C63B3A00F565C0 /* main.m in Sources */,
 				E3B2F8E720C6699E00F565C0 /* AESCipher.m in Sources */,
 				E3B2F8D520C63B3A00F565C0 /* AppDelegate.m in Sources */,
 				E3C3E4DD20C67A6E00DFC7DD /* UIView+dottedLine.m in Sources */,
+				E3C3E4F820C6814400DFC7DD /* UIView+ParentController.m in Sources */,
 				E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */,
+				E3C3E4FE20C6816500DFC7DD /* OpenUDID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
