@@ -22,8 +22,8 @@
 #import <AFNetworking.h>
 #import <YYKit.h>
 
-//MARK:添加分类，自定义工具类
-#import "AESCipher.h"
-
+//MARK:添加分类，自定义工具类,常量
+#import "CategoryHeader.h"
+#import "ToolsHeader.h"
 
 #endif /* PrefixHeader_pch */

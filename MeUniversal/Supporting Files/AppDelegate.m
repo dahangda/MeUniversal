@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+#if defined(DEBUG)||defined(_DEBUG) //仅仅在模拟器上跑测试会显示FPS
+    [[JPFPSStatus sharedInstance] open];
+#endif
+    
+//    [self setUpFixiOS11]; //适配IOS 11
     return YES;
 }
 

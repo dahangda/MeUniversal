@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C53B5DC41B8B363C1985A09F /* libPods-MeUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8419CF1ECD5604EAB647899 /* libPods-MeUniversal.a */; };
+		E33503A420E47A880017E852 /* DCCheckRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503A220E47A880017E852 /* DCCheckRegular.m */; };
+		E33503AF20E47B630017E852 /* DCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503AE20E47B630017E852 /* DCPlaceholderTextView.m */; };
+		E33503BD20E485C30017E852 /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503BB20E485C30017E852 /* UIView+DCExtension.m */; };
+		E3994A5620E4C332003E00D7 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E3994A5520E4C332003E00D7 /* JPFPSStatus.m */; };
 		E3B2F8D520C63B3A00F565C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B2F8CB20C63B3A00F565C0 /* AppDelegate.m */; };
 		E3B2F8D620C63B3A00F565C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B2F8CC20C63B3A00F565C0 /* Assets.xcassets */; };
 		E3B2F8D720C63B3A00F565C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B2F8CD20C63B3A00F565C0 /* LaunchScreen.storyboard */; };
@@ -28,6 +32,16 @@
 		6A0B76539B3D533A2C892903 /* Pods-MeUniversal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeUniversal.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeUniversal/Pods-MeUniversal.release.xcconfig"; sourceTree = "<group>"; };
 		C8419CF1ECD5604EAB647899 /* libPods-MeUniversal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeUniversal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD73CE6E7532D3F2151824D /* Pods-MeUniversal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeUniversal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeUniversal/Pods-MeUniversal.debug.xcconfig"; sourceTree = "<group>"; };
+		E33503A220E47A880017E852 /* DCCheckRegular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCheckRegular.m; sourceTree = "<group>"; };
+		E33503A320E47A880017E852 /* DCCheckRegular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCheckRegular.h; sourceTree = "<group>"; };
+		E33503AD20E47B630017E852 /* DCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPlaceholderTextView.h; sourceTree = "<group>"; };
+		E33503AE20E47B630017E852 /* DCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPlaceholderTextView.m; sourceTree = "<group>"; };
+		E33503B720E484740017E852 /* CategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
+		E33503B820E484DB0017E852 /* ToolsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsHeader.h; sourceTree = "<group>"; };
+		E33503BB20E485C30017E852 /* UIView+DCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCExtension.m"; sourceTree = "<group>"; };
+		E33503BC20E485C30017E852 /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
+		E3994A5420E4C332003E00D7 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		E3994A5520E4C332003E00D7 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
 		E3B2F89720C6353000F565C0 /* MeUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeUniversal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B2F8CA20C63B3A00F565C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3B2F8CB20C63B3A00F565C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +106,68 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E33503A020E477D30017E852 /* Const（常量） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Const（常量）";
+			sourceTree = "<group>";
+		};
+		E33503A120E47A280017E852 /* Tools(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+				E3994A5320E4C332003E00D7 /* JPFPSStatus */,
+				E33503B920E485210017E852 /* TextView */,
+				E3B2F8E420C6696200F565C0 /* encrypt */,
+				E3C3E4FF20C6821E00DFC7DD /* NetworkSingleton.h */,
+				E3C3E50020C6821E00DFC7DD /* NetworkSingleton.m */,
+				E3C3E4FC20C6816400DFC7DD /* OpenUDID.m */,
+				E3C3E4FD20C6816500DFC7DD /* OpenUDID.h */,
+				E33503A320E47A880017E852 /* DCCheckRegular.h */,
+				E33503A220E47A880017E852 /* DCCheckRegular.m */,
+				E33503B820E484DB0017E852 /* ToolsHeader.h */,
+			);
+			path = "Tools(工具类)";
+			sourceTree = "<group>";
+		};
+		E33503B020E47DF20017E852 /* Expand(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				E3C3E4D120C679B200DFC7DD /* Category */,
+				E3B2F8B220C636B600F565C0 /* Global(宏定义) */,
+				E33503A020E477D30017E852 /* Const（常量） */,
+				E33503A120E47A280017E852 /* Tools(工具类) */,
+			);
+			path = "Expand(扩展)";
+			sourceTree = "<group>";
+		};
+		E33503B920E485210017E852 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				E33503AD20E47B630017E852 /* DCPlaceholderTextView.h */,
+				E33503AE20E47B630017E852 /* DCPlaceholderTextView.m */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		E33503BA20E485AA0017E852 /* DC */ = {
+			isa = PBXGroup;
+			children = (
+				E33503BC20E485C30017E852 /* UIView+DCExtension.h */,
+				E33503BB20E485C30017E852 /* UIView+DCExtension.m */,
+			);
+			path = DC;
+			sourceTree = "<group>";
+		};
+		E3994A5320E4C332003E00D7 /* JPFPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				E3994A5420E4C332003E00D7 /* JPFPSStatus.h */,
+				E3994A5520E4C332003E00D7 /* JPFPSStatus.m */,
+			);
+			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
 		E3B2F88E20C6353000F565C0 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				E3B2F8B020C6357A00F565C0 /* Module(功能入口) */,
+				E33503B020E47DF20017E852 /* Expand(扩展) */,
 				E3B2F8E320C663FC00F565C0 /* Bases(基本控制器) */,
-				E3B2F8B220C636B600F565C0 /* Global(宏定义) */,
-				E3B2F8B320C636DD00F565C0 /* Utils(第三方) */,
 				E3B2F8C920C63B3A00F565C0 /* Supporting Files */,
 			);
 			path = MeUniversal;
@@ -138,19 +213,6 @@
 				E3B2F8E020C65FBE00F565C0 /* ThirdMacros.h */,
 			);
 			path = "Global(宏定义)";
-			sourceTree = "<group>";
-		};
-		E3B2F8B320C636DD00F565C0 /* Utils(第三方) */ = {
-			isa = PBXGroup;
-			children = (
-				E3C3E4FC20C6816400DFC7DD /* OpenUDID.m */,
-				E3C3E4FD20C6816500DFC7DD /* OpenUDID.h */,
-				E3C3E4FF20C6821E00DFC7DD /* NetworkSingleton.h */,
-				E3C3E50020C6821E00DFC7DD /* NetworkSingleton.m */,
-				E3C3E4D120C679B200DFC7DD /* Category */,
-				E3B2F8E420C6696200F565C0 /* encrypt */,
-			);
-			path = "Utils(第三方)";
 			sourceTree = "<group>";
 		};
 		E3B2F8C920C63B3A00F565C0 /* Supporting Files */ = {
@@ -189,6 +251,7 @@
 		E3C3E4D120C679B200DFC7DD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E33503BA20E485AA0017E852 /* DC */,
 				E3C3E4FA20C6815300DFC7DD /* UIColor+YMHex.h */,
 				E3C3E4F920C6815300DFC7DD /* UIColor+YMHex.m */,
 				E3C3E4F720C6814300DFC7DD /* UIView+ParentController.h */,
@@ -199,6 +262,7 @@
 				E3C3E4D920C67A4B00DFC7DD /* AppDelegate+AppService.m */,
 				E3C3E4D220C679D200DFC7DD /* UIButton+EnlargeHitArea.h */,
 				E3C3E4D320C679D200DFC7DD /* UIButton+EnlargeHitArea.m */,
+				E33503B720E484740017E852 /* CategoryHeader.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -336,8 +400,12 @@
 				E3B2F8DA20C63B3A00F565C0 /* main.m in Sources */,
 				E3B2F8E720C6699E00F565C0 /* AESCipher.m in Sources */,
 				E3B2F8D520C63B3A00F565C0 /* AppDelegate.m in Sources */,
+				E33503A420E47A880017E852 /* DCCheckRegular.m in Sources */,
+				E33503BD20E485C30017E852 /* UIView+DCExtension.m in Sources */,
+				E3994A5620E4C332003E00D7 /* JPFPSStatus.m in Sources */,
 				E3C3E50120C6821E00DFC7DD /* NetworkSingleton.m in Sources */,
 				E3C3E4DD20C67A6E00DFC7DD /* UIView+dottedLine.m in Sources */,
+				E33503AF20E47B630017E852 /* DCPlaceholderTextView.m in Sources */,
 				E3C3E4F820C6814400DFC7DD /* UIView+ParentController.m in Sources */,
 				E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */,
 				E3C3E4FE20C6816500DFC7DD /* OpenUDID.m in Sources */,
@@ -482,7 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MDNXSXPV3B;
+				DEVELOPMENT_TEAM = 57767VFS85;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MeUniversal/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MeUniversal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,7 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MDNXSXPV3B;
+				DEVELOPMENT_TEAM = 57767VFS85;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MeUniversal/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MeUniversal/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

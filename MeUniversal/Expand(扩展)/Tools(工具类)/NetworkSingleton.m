@@ -34,15 +34,22 @@
    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager.requestSerializer setTimeoutInterval:TIMEOUT];
-    manager.requestSerializer=[AFJSONRequestSerializer serializer];
-
+    manager.requestSerializer= [AFJSONRequestSerializer serializer];
+//
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"multipart/form-data", @"application/json", @"text/html", @"image/jpeg", @"image/png", @"application/octet-stream", @"text/json", nil];
-
-    [manager POST:url parameters:userInfo success:^(NSURLSessionDataTask * _Nonnull operation, id  _Nonnull responseObject) {
-        successblock(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable operation, NSError * _Nonnull error) {
-        failureblock(error);
+    [manager POST:url parameters:userInfo progress:^(NSProgress * _Nonnull uploadProgress) {
+        nil;
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        nil;
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        nil;
     }];
+//
+////    [manager POST:url parameters:userInfo success:^(NSURLSessionDataTask * _Nonnull operation, id  _Nonnull responseObject) {
+////        successblock(responseObject);
+////    } failure:^(NSURLSessionDataTask * _Nullable operation, NSError * _Nonnull error) {
+//        failureblock(error);
+//    }];
 
 }
 
