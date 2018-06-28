@@ -14,5 +14,8 @@
 #import "encrypt/AESCipher.h"
 /** 数据检查*/
 #import "DCCheckRegular.h"
+/** FPS*/
 #import "JPFPSStatus.h"
+/** app版本*/
+#import "DCAppVersionTool.h"
 #endif /* toolsHeader_h */
