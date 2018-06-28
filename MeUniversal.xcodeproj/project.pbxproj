@@ -12,6 +12,7 @@
 		E33503AF20E47B630017E852 /* DCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503AE20E47B630017E852 /* DCPlaceholderTextView.m */; };
 		E33503BD20E485C30017E852 /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503BB20E485C30017E852 /* UIView+DCExtension.m */; };
 		E3763AB720E4C9E300FD09C7 /* DCAppVersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3763AB620E4C9E300FD09C7 /* DCAppVersionTool.m */; };
+		E3763ABE20E4D22C00FD09C7 /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3763ABD20E4D22C00FD09C7 /* FeatureViewController.m */; };
 		E3994A5620E4C332003E00D7 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E3994A5520E4C332003E00D7 /* JPFPSStatus.m */; };
 		E3B2F8D520C63B3A00F565C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B2F8CB20C63B3A00F565C0 /* AppDelegate.m */; };
 		E3B2F8D620C63B3A00F565C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B2F8CC20C63B3A00F565C0 /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 		E33503BC20E485C30017E852 /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
 		E3763AB520E4C9E300FD09C7 /* DCAppVersionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAppVersionTool.h; sourceTree = "<group>"; };
 		E3763AB620E4C9E300FD09C7 /* DCAppVersionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCAppVersionTool.m; sourceTree = "<group>"; };
+		E3763ABC20E4D22C00FD09C7 /* FeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureViewController.h; sourceTree = "<group>"; };
+		E3763ABD20E4D22C00FD09C7 /* FeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureViewController.m; sourceTree = "<group>"; };
 		E3994A5420E4C332003E00D7 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
 		E3994A5520E4C332003E00D7 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
 		E3B2F89720C6353000F565C0 /* MeUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeUniversal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,11 +182,20 @@
 			path = AppVersion;
 			sourceTree = "<group>";
 		};
-		E3763AB820E4CB3600FD09C7 /* Main */ = {
+		E3763AB820E4CB3600FD09C7 /* Main(主要入口) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Main;
+			path = "Main(主要入口)";
+			sourceTree = "<group>";
+		};
+		E3763ABB20E4D18F00FD09C7 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				E3763ABC20E4D22C00FD09C7 /* FeatureViewController.h */,
+				E3763ABD20E4D22C00FD09C7 /* FeatureViewController.m */,
+			);
+			path = "NewFeature(新特性)";
 			sourceTree = "<group>";
 		};
 		E3994A5320E4C332003E00D7 /* JPFPSStatus */ = {
@@ -227,7 +239,8 @@
 		E3B2F8B020C6357A00F565C0 /* Module(功能入口) */ = {
 			isa = PBXGroup;
 			children = (
-				E3763AB820E4CB3600FD09C7 /* Main */,
+				E3763ABB20E4D18F00FD09C7 /* NewFeature(新特性) */,
+				E3763AB820E4CB3600FD09C7 /* Main(主要入口) */,
 				E3763AB320E4C85400FD09C7 /* AppDelegate */,
 			);
 			path = "Module(功能入口)";
@@ -431,6 +444,7 @@
 				E3763AB720E4C9E300FD09C7 /* DCAppVersionTool.m in Sources */,
 				E3C3E50120C6821E00DFC7DD /* NetworkSingleton.m in Sources */,
 				E3C3E4DD20C67A6E00DFC7DD /* UIView+dottedLine.m in Sources */,
+				E3763ABE20E4D22C00FD09C7 /* FeatureViewController.m in Sources */,
 				E33503AF20E47B630017E852 /* DCPlaceholderTextView.m in Sources */,
 				E3C3E4F820C6814400DFC7DD /* UIView+ParentController.m in Sources */,
 				E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */,

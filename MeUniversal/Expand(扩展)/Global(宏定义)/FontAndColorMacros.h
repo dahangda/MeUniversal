@@ -11,6 +11,9 @@
 //全局背景色
 #define DCBGColor RGB(245,245,245)
 #define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+//色值
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 #define PFR20Font [UIFont fontWithName:PFR size:20];
 #define PFR18Font [UIFont fontWithName:PFR size:18];
