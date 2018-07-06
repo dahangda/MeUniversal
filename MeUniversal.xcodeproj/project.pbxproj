@@ -11,6 +11,8 @@
 		E33503A420E47A880017E852 /* DCCheckRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503A220E47A880017E852 /* DCCheckRegular.m */; };
 		E33503AF20E47B630017E852 /* DCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503AE20E47B630017E852 /* DCPlaceholderTextView.m */; };
 		E33503BD20E485C30017E852 /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503BB20E485C30017E852 /* UIView+DCExtension.m */; };
+		E346C5D920EF673B0013C99B /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E346C5D720EF673A0013C99B /* NSObject+Additions.m */; };
+		E346C5DA20EF673B0013C99B /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E346C5D820EF673B0013C99B /* NSDictionary+Additions.m */; };
 		E3763AB720E4C9E300FD09C7 /* DCAppVersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3763AB620E4C9E300FD09C7 /* DCAppVersionTool.m */; };
 		E3763ABE20E4D22C00FD09C7 /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3763ABD20E4D22C00FD09C7 /* FeatureViewController.m */; };
 		E3994A5620E4C332003E00D7 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E3994A5520E4C332003E00D7 /* JPFPSStatus.m */; };
@@ -41,6 +43,10 @@
 		E33503B820E484DB0017E852 /* ToolsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsHeader.h; sourceTree = "<group>"; };
 		E33503BB20E485C30017E852 /* UIView+DCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCExtension.m"; sourceTree = "<group>"; };
 		E33503BC20E485C30017E852 /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
+		E346C5D520EF673A0013C99B /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		E346C5D620EF673A0013C99B /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
+		E346C5D720EF673A0013C99B /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		E346C5D820EF673B0013C99B /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
 		E3763AB520E4C9E300FD09C7 /* DCAppVersionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAppVersionTool.h; sourceTree = "<group>"; };
 		E3763AB620E4C9E300FD09C7 /* DCAppVersionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCAppVersionTool.m; sourceTree = "<group>"; };
 		E3763ABC20E4D22C00FD09C7 /* FeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureViewController.h; sourceTree = "<group>"; };
@@ -160,6 +166,10 @@
 			children = (
 				E33503BC20E485C30017E852 /* UIView+DCExtension.h */,
 				E33503BB20E485C30017E852 /* UIView+DCExtension.m */,
+				E346C5D520EF673A0013C99B /* NSDictionary+Additions.h */,
+				E346C5D820EF673B0013C99B /* NSDictionary+Additions.m */,
+				E346C5D620EF673A0013C99B /* NSObject+Additions.h */,
+				E346C5D720EF673A0013C99B /* NSObject+Additions.m */,
 			);
 			path = DC;
 			sourceTree = "<group>";
@@ -440,6 +450,7 @@
 				E3B2F8D520C63B3A00F565C0 /* AppDelegate.m in Sources */,
 				E33503A420E47A880017E852 /* DCCheckRegular.m in Sources */,
 				E33503BD20E485C30017E852 /* UIView+DCExtension.m in Sources */,
+				E346C5DA20EF673B0013C99B /* NSDictionary+Additions.m in Sources */,
 				E3994A5620E4C332003E00D7 /* JPFPSStatus.m in Sources */,
 				E3763AB720E4C9E300FD09C7 /* DCAppVersionTool.m in Sources */,
 				E3C3E50120C6821E00DFC7DD /* NetworkSingleton.m in Sources */,
@@ -447,6 +458,7 @@
 				E3763ABE20E4D22C00FD09C7 /* FeatureViewController.m in Sources */,
 				E33503AF20E47B630017E852 /* DCPlaceholderTextView.m in Sources */,
 				E3C3E4F820C6814400DFC7DD /* UIView+ParentController.m in Sources */,
+				E346C5D920EF673B0013C99B /* NSObject+Additions.m in Sources */,
 				E3C3E4DA20C67A4B00DFC7DD /* AppDelegate+AppService.m in Sources */,
 				E3C3E4FE20C6816500DFC7DD /* OpenUDID.m in Sources */,
 			);
