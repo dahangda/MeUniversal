@@ -13,6 +13,8 @@
 		E33503BD20E485C30017E852 /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E33503BB20E485C30017E852 /* UIView+DCExtension.m */; };
 		E346C5D920EF673B0013C99B /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E346C5D720EF673A0013C99B /* NSObject+Additions.m */; };
 		E346C5DA20EF673B0013C99B /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E346C5D820EF673B0013C99B /* NSDictionary+Additions.m */; };
+		E346C5DF20EF69E60013C99B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E346C5DE20EF69E60013C99B /* BaseViewController.m */; };
+		E35B595320FDF2E1007DCC54 /* FeatureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E35B595220FDF2E1007DCC54 /* FeatureCollectionViewCell.m */; };
 		E3763AB720E4C9E300FD09C7 /* DCAppVersionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E3763AB620E4C9E300FD09C7 /* DCAppVersionTool.m */; };
 		E3763ABE20E4D22C00FD09C7 /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3763ABD20E4D22C00FD09C7 /* FeatureViewController.m */; };
 		E3994A5620E4C332003E00D7 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E3994A5520E4C332003E00D7 /* JPFPSStatus.m */; };
@@ -47,6 +49,10 @@
 		E346C5D620EF673A0013C99B /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		E346C5D720EF673A0013C99B /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		E346C5D820EF673B0013C99B /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		E346C5DD20EF69E60013C99B /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E346C5DE20EF69E60013C99B /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E35B595120FDF2E1007DCC54 /* FeatureCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureCollectionViewCell.h; sourceTree = "<group>"; };
+		E35B595220FDF2E1007DCC54 /* FeatureCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeatureCollectionViewCell.m; sourceTree = "<group>"; };
 		E3763AB520E4C9E300FD09C7 /* DCAppVersionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCAppVersionTool.h; sourceTree = "<group>"; };
 		E3763AB620E4C9E300FD09C7 /* DCAppVersionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCAppVersionTool.m; sourceTree = "<group>"; };
 		E3763ABC20E4D22C00FD09C7 /* FeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureViewController.h; sourceTree = "<group>"; };
@@ -174,6 +180,29 @@
 			path = DC;
 			sourceTree = "<group>";
 		};
+		E346C5DB20EF689C0013C99B /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E346C5DD20EF69E60013C99B /* BaseViewController.h */,
+				E346C5DE20EF69E60013C99B /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		E346C5DC20EF68BA0013C99B /* BaseNavController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseNavController;
+			sourceTree = "<group>";
+		};
+		E35B595020FDD42F007DCC54 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		E3763AB320E4C85400FD09C7 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +224,7 @@
 		E3763AB820E4CB3600FD09C7 /* Main(主要入口) */ = {
 			isa = PBXGroup;
 			children = (
+				E35B595020FDD42F007DCC54 /* TabBarController */,
 			);
 			path = "Main(主要入口)";
 			sourceTree = "<group>";
@@ -204,6 +234,8 @@
 			children = (
 				E3763ABC20E4D22C00FD09C7 /* FeatureViewController.h */,
 				E3763ABD20E4D22C00FD09C7 /* FeatureViewController.m */,
+				E35B595120FDF2E1007DCC54 /* FeatureCollectionViewCell.h */,
+				E35B595220FDF2E1007DCC54 /* FeatureCollectionViewCell.m */,
 			);
 			path = "NewFeature(新特性)";
 			sourceTree = "<group>";
@@ -284,6 +316,8 @@
 		E3B2F8E320C663FC00F565C0 /* Bases(基本控制器) */ = {
 			isa = PBXGroup;
 			children = (
+				E346C5DC20EF68BA0013C99B /* BaseNavController */,
+				E346C5DB20EF689C0013C99B /* BaseViewController */,
 			);
 			path = "Bases(基本控制器)";
 			sourceTree = "<group>";
@@ -442,7 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35B595320FDF2E1007DCC54 /* FeatureCollectionViewCell.m in Sources */,
 				E3B2F8DB20C63B3A00F565C0 /* ViewController.m in Sources */,
+				E346C5DF20EF69E60013C99B /* BaseViewController.m in Sources */,
 				E3C3E4D420C679D200DFC7DD /* UIButton+EnlargeHitArea.m in Sources */,
 				E3C3E4FB20C6815300DFC7DD /* UIColor+YMHex.m in Sources */,
 				E3B2F8DA20C63B3A00F565C0 /* main.m in Sources */,

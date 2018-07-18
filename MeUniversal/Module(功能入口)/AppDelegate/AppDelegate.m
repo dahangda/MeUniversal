@@ -19,12 +19,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self setUpRootVC];
-    
      #if defined(DEBUG)||defined(_DEBUG) //仅仅在模拟器上跑测试会显示FPS
-     [[JPFPSStatus sharedInstance] open];
+     //[[JPFPSStatus sharedInstance] open];
 //    [[FLEXManager sharedManager] showExplorer];
 #endif
-    
     [self setUpFixiOS11]; //适配IOS 11
     [self.window makeKeyAndVisible];
     return YES;
@@ -32,18 +30,15 @@
 
 - (void)setUpRootVC{
     
-    if ([BUNDLE_VERSION isEqualToString:[DCAppVersionTool dc_GetLastOneAppVersion]]) {//判断是否当前版本号等于上一次储存版本号
-        
+    if (![BUNDLE_VERSION isEqualToString:[DCAppVersionTool dc_GetLastOneAppVersion]]) {//判断是否当前版本号等于上一次储存版本号
 //        self.window.rootViewController = [[DCTabBarController alloc] init];
     }else{
         
         [DCAppVersionTool dc_SaveNewAppVersion:BUNDLE_VERSION]; //储存当前版本号
-        
          //设置窗口的根控制器
         FeatureViewController *dcFVc = [[FeatureViewController alloc] init];
         [dcFVc setUpFeatureAttribute:^(NSArray *__autoreleasing *imageArray, UIColor *__autoreleasing *selColor, BOOL *showSkip, BOOL *showPageCount) {
-            
-            *imageArray = @[@"guide1",@"guide2",@"guide3",@"guide4"];
+            *imageArray = @[@"feartureCellIamge_Hant",@"feartureCellIamge_Hant",@"feartureCellIamge_Hant",@"feartureCellIamge_Hant"];
             *showPageCount = YES;
             *showSkip = YES;
         }];

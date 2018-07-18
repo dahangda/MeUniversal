@@ -131,7 +131,7 @@
  */
 - (void)updatePlaceholderLabelSize
 {
-    CGSize maxSize = CGSizeMake(ScreenW - 2 * self.placeholderLabel.dc_x, MAXFLOAT);
+    CGSize maxSize = CGSizeMake(SCREEN_WIDTH - 2 * self.placeholderLabel.dc_x, MAXFLOAT);
     self.placeholderLabel.dc_size = [_placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
 }
 
